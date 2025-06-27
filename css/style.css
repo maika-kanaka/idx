@@ -524,3 +524,315 @@ PRIVACY OVERLAY
         padding: 15px;
     }
 }
+
+/**
+INFO WISATA PAGE ANIMATIONS
+*/
+
+#info-wisata-slideshow {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    max-width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#wisata .uk-overlay {
+    background-color: rgba(0,0,0,.7);
+}
+
+@media (max-width: 768px) {
+    #info-wisata-slideshow {
+        max-width: 90vw;
+    }
+
+    #info-wisata-slideshow p.uk-margin-remove {
+        display: none;
+    }
+}
+
+/**
+TRANSPORTASI PAGE STYLES
+*/
+.transportasi-page {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.transportasi-header {
+    padding: 20px 30px;
+    position: relative;
+    z-index: 10;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.idx-logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.transport-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-item {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-item.active {
+    background: rgba(46, 125, 50, 0.8);
+    color: white;
+}
+
+.nav-item:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.close-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.flight-booking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 5;
+}
+
+.flight-card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.flight-route {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.airport-code {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+}
+
+.flight-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flight-details {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.airplane-image {
+    flex-shrink: 0;
+}
+
+.airplane-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #87CEEB, #4169E1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-section {
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    color: #000;
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    color: #333;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.contact-person {
+    color: #000;
+}
+
+.contact-person h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.contact-info p {
+    margin: 8px 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.city-skyline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: linear-gradient(to top, 
+        rgba(0, 0, 0, 0.8) 0%, 
+        rgba(0, 0, 0, 0.4) 50%, 
+        transparent 100%
+    );
+    z-index: 1;
+}
+
+.city-skyline::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background: linear-gradient(90deg, 
+        transparent 0%,
+        rgba(255, 215, 0, 0.3) 10%,
+        rgba(255, 165, 0, 0.3) 20%,
+        transparent 30%,
+        rgba(255, 215, 0, 0.3) 40%,
+        transparent 50%,
+        rgba(255, 165, 0, 0.3) 60%,
+        transparent 70%,
+        rgba(255, 215, 0, 0.3) 80%,
+        transparent 90%,
+        rgba(255, 215, 0, 0.3) 100%
+    );
+    clip-path: polygon(
+        0% 100%, 5% 70%, 10% 80%, 15% 60%, 20% 75%, 25% 50%, 30% 65%, 
+        35% 45%, 40% 70%, 45% 40%, 50% 60%, 55% 35%, 60% 55%, 65% 45%, 
+        70% 65%, 75% 40%, 80% 70%, 85% 50%, 90% 75%, 95% 55%, 100% 80%, 
+        100% 100%
+    );
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .transportasi-header {
+        padding: 15px 20px;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .transport-nav {
+        gap: 15px;
+    }
+    
+    .nav-item {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    
+    .flight-card {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .flight-details {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .airplane-circle {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .airplane-circle svg {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .airport-code {
+        font-size: 28px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .contact-person h3 {
+        font-size: 18px;
+    }
+    
+    .contact-info p {
+        font-size: 13px;
+    }
+}
+
+.form-group input {
+    box-sizing: border-box;
+}
