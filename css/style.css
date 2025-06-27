@@ -551,6 +551,288 @@ INFO WISATA PAGE ANIMATIONS
     }
 }
 
+/* Wisata page animations */
+#wisata.page-content.active .uk-container {
+    animation: wisataFadeIn 1s ease-out forwards;
+    opacity: 0;
+}
+
+#wisata.page-content.active .uk-heading-large {
+    animation: wisataTitleSlide 1.2s ease-out 0.3s forwards;
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+#wisata.page-content.active #info-wisata-slideshow {
+    animation: wisataSlideshowZoom 1.5s ease-out 0.6s forwards;
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+@keyframes wisataFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes wisataTitleSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes wisataSlideshowZoom {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Wisata hover effects for slideshow items */
+#wisata.page-content.active .uk-slideshow-items img {
+    transition: transform 0.3s ease;
+}
+
+#wisata.page-content.active .uk-slideshow-items:hover img {
+    transform: scale(1.05);
+}
+
+/* Mobile responsive animations for wisata */
+@media (max-width: 768px) {
+    #wisata.page-content.active .uk-heading-large {
+        animation: wisataTitleSlideMobile 1s ease-out 0.2s forwards;
+    }
+    
+    #wisata.page-content.active #info-wisata-slideshow {
+        animation: wisataSlideshowZoomMobile 1.2s ease-out 0.4s forwards;
+    }
+    
+    @keyframes wisataTitleSlideMobile {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes wisataSlideshowZoomMobile {
+        from {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}
+
+/* Transportasi page animations */
+#transportasi.page-content.active .transportasi-page {
+    animation: transportasiFadeIn 1s ease-out forwards;
+    opacity: 0;
+}
+
+#transportasi.page-content.active .flight-booking-container {
+    animation: transportasiSlideUp 1.2s ease-out 0.3s forwards;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+#transportasi.page-content.active .flight-card {
+    animation: transportasiCardZoom 1.5s ease-out 0.6s forwards;
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+#transportasi.page-content.active .flight-route {
+    animation: transportasiRouteSlide 1s ease-out 0.9s forwards;
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+#transportasi.page-content.active .airplane-circle {
+    animation: transportasiPlaneRotate 2s ease-out 1.2s forwards;
+    opacity: 0;
+    transform: rotate(-45deg) scale(0.8);
+}
+
+#transportasi.page-content.active .form-section {
+    animation: transportasiFormFade 1.2s ease-out 1s forwards;
+    opacity: 0;
+}
+
+#transportasi.page-content.active .contact-person {
+    animation: transportasiContactSlide 1s ease-out 1.5s forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+#transportasi.page-content.active .city-skyline {
+    animation: transportasiSkylineFade 2s ease-out 0.5s forwards;
+    opacity: 0;
+}
+
+@keyframes transportasiFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes transportasiSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes transportasiCardZoom {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes transportasiRouteSlide {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes transportasiPlaneRotate {
+    from {
+        opacity: 0;
+        transform: rotate(-45deg) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+@keyframes transportasiFormFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes transportasiContactSlide {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes transportasiSkylineFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Transportasi hover effects */
+#transportasi.page-content.active .flight-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#transportasi.page-content.active .flight-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+#transportasi.page-content.active .airplane-circle:hover {
+    transform: rotate(5deg) scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Mobile responsive animations for transportasi */
+@media (max-width: 768px) {
+    #transportasi.page-content.active .flight-booking-container {
+        animation: transportasiSlideUpMobile 1s ease-out 0.2s forwards;
+    }
+    
+    #transportasi.page-content.active .flight-card {
+        animation: transportasiCardZoomMobile 1.2s ease-out 0.4s forwards;
+    }
+    
+    #transportasi.page-content.active .airplane-circle {
+        animation: transportasiPlaneRotateMobile 1.5s ease-out 0.8s forwards;
+    }
+    
+    @keyframes transportasiSlideUpMobile {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes transportasiCardZoomMobile {
+        from {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    
+    @keyframes transportasiPlaneRotateMobile {
+        from {
+            opacity: 0;
+            transform: rotate(-30deg) scale(0.9);
+        }
+        to {
+            opacity: 1;
+            transform: rotate(0deg) scale(1);
+        }
+    }
+}
+
 /**
 TRANSPORTASI PAGE STYLES
 */

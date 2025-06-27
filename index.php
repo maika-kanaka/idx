@@ -314,7 +314,7 @@ if (!in_array($page, $allowed_pages)) {
             }
 
             // Trigger animations for specific pages
-            if(pageId === 'qrcode' || pageId === 'lokasi') {
+            if(pageId === 'qrcode' || pageId === 'lokasi' || pageId === 'wisata' || pageId === 'transportasi') {
                 // Force reflow to restart animations
                 selectedPage[0].offsetHeight;
                 
