@@ -229,3 +229,188 @@ LOCATION CARDS
         padding: 20px 40px;
     }
 }
+
+/**
+QR CODE PAGE ANIMATIONS
+*/
+#qrcode.page-content.active .qr-page-container {
+    animation: qrPageFadeIn 0.8s ease-out;
+}
+
+#qrcode.page-content.active .qr-title {
+    animation: qrTitleSlideDown 0.6s ease-out 0.2s both;
+}
+
+#qrcode.page-content.active .qr-card {
+    animation: qrCardZoomIn 0.8s ease-out 0.4s both;
+    transform-origin: center;
+    border-radius: 40px !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+#qrcode.page-content.active .qr-image {
+    animation: qrCodePulse 1.2s ease-in-out 0.8s both;
+    border-radius: 20px;
+}
+
+@keyframes qrPageFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes qrTitleSlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes qrCardZoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.7) translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes qrCodePulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(34, 96, 91, 0.7);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(34, 96, 91, 0.2);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(34, 96, 91, 0);
+    }
+}
+
+/**
+LOKASI PAGE ANIMATIONS
+*/
+#lokasi.page-content.active .lokasi-page-container {
+    animation: lokasiFadeIn 0.6s ease-out;
+}
+
+#lokasi.page-content.active .lokasi-title {
+    animation: lokasiTitleSlide 0.8s ease-out 0.2s both;
+}
+
+#lokasi.page-content.active .lokasi-grid > div {
+    opacity: 0;
+    animation: lokasiCardSlideIn 0.6s ease-out both;
+}
+
+/* Staggered animation delays for location cards */
+#lokasi.page-content.active .lokasi-grid > div:nth-child(1) {
+    animation-delay: 0.4s;
+}
+
+#lokasi.page-content.active .lokasi-grid > div:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+#lokasi.page-content.active .lokasi-grid > div:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+#lokasi.page-content.active .lokasi-grid > div:nth-child(4) {
+    animation-delay: 1.0s;
+}
+
+#lokasi.page-content.active .lokasi-grid > div:nth-child(5) {
+    animation-delay: 1.2s;
+}
+
+#lokasi.page-content.active .lokasi-grid > div:nth-child(6) {
+    animation-delay: 1.4s;
+}
+
+@keyframes lokasiFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes lokasiTitleSlide {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes lokasiCardSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Enhanced hover effects for location cards when page is active */
+#lokasi.page-content.active .hotel-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+#lokasi.page-content.active .hotel-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25) !important;
+    filter: brightness(1.05);
+}
+
+/* Mobile responsive animations */
+@media (max-width: 768px) {
+    #qrcode.page-content.active .uk-card {
+        animation: qrCardZoomInMobile 0.8s ease-out 0.4s both;
+    }
+    
+    @keyframes qrCardZoomInMobile {
+        from {
+            opacity: 0;
+            transform: scale(0.8) translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+    }
+    
+    #lokasi.page-content.active .lokasi-grid > div {
+        animation: lokasiCardSlideInMobile 0.5s ease-out both;
+    }
+    
+    @keyframes lokasiCardSlideInMobile {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}

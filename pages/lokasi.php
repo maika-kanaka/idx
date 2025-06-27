@@ -1,9 +1,9 @@
-<div class="uk-container">
+<div class="uk-container lokasi-page-container">
     <?php include 'components/logo.php'; ?>
     
-    <h1 class="uk-heading-large uk-text-center uk-margin-large-bottom">Lokasi</h1>
+    <h1 class="uk-heading-large uk-text-center uk-margin-large-bottom lokasi-title">Lokasi</h1>
     
-    <div class="uk-grid-match uk-child-width-1-3@l uk-child-width-1-2@m uk-child-width-1-1@s uk-grid-large" uk-grid>
+    <div class="uk-grid-match uk-child-width-1-3@l uk-child-width-1-2@m uk-child-width-1-1@s uk-grid-large lokasi-grid" uk-grid>
         <!-- Swiss-Belhotel Harbour Bay -->
         <div>
             <div class="uk-card uk-card-default hotel-card uk-box-shadow-medium">
@@ -69,7 +69,7 @@
     </div>
 
         <!-- CSR -->
-    <div class="uk-grid-match uk-child-width-1-3@l uk-child-width-1-2@m uk-child-width-1-1@s uk-grid-large" uk-grid>
+    <div class="uk-grid-match uk-child-width-1-3@l uk-child-width-1-2@m uk-child-width-1-1@s uk-grid-large lokasi-grid" uk-grid>
         <div>
             <div class="uk-card uk-card-default hotel-card uk-box-shadow-medium">
                 <div class="uk-card-media-top">

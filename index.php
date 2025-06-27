@@ -244,6 +244,17 @@ if (!in_array($page, $allowed_pages)) {
             if(pageId != 'home'){
                 const selectedPage = $('#' + pageId);
                 selectedPage.addClass('active ' + randomBg);
+                
+                // Trigger animations for specific pages
+                if(pageId === 'qrcode' || pageId === 'lokasi') {
+                    // Force reflow to restart animations
+                    selectedPage[0].offsetHeight;
+                    
+                    // Add a small delay to ensure smooth animation start
+                    setTimeout(() => {
+                        selectedPage.addClass('animate-in');
+                    }, 50);
+                }
             }
             
             // Scroll to top
