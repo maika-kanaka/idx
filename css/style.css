@@ -1,0 +1,98 @@
+.logo {
+    max-height: 90px;
+    width: auto;
+}
+
+.page-content {
+    display: none;
+    min-height: 70vh;
+}
+
+.page-content.active {
+    display: block;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.feature-card {
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.navbar-transparent {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+@media (max-width: 768px) {
+    .logo {
+        max-height: 40px;
+    }
+    
+    .hero-section {
+        padding: 60px 0;
+    }
+}
+
+
+/**
+nav
+*/
+
+nav {
+    background: linear-gradient(135deg, #0a2342 0%, #1976d2 100%) !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav .uk-container {
+    display: flex;
+    max-width: 1400px;
+    width: 1400px;
+}
+
+.uk-navbar-nav>li>a {
+    color: #fff;
+}
+
+/**
+home
+*/
+
+.kv {
+    width: 100%;
+}
+
+
+/**
+HELPER CLASS
+*/
+@media (max-width: 768px) {
+    .hide-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .hide-desktop {
+        display: none;
+    }
+}
+
+/**
+FOOTER
+*/
+
+footer {
+    padding: 20px !important;
+}

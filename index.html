@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migunesia - Company Website</title>
+    
+    <!-- UIKit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="uk-navbar-container navbar-transparent" uk-navbar uk-sticky>
+        <div class="uk-container">
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="#" onclick="showPage('home')">
+                    <img src="https://guestbook.migunesia.com/storage/anu-anu-builder/event-2352/logo1.png" alt="Migunesia Logo" class="logo">
+                </a>
+            </div>
+            
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav uk-visible@m">
+                    <li><a href="#" onclick="showPage('home')">HOME</a></li>
+                    <li><a href="#" onclick="showPage('qrcode')">MY QR CODE</a></li>
+                    <li><a href="#" onclick="showPage('transportasi')">TRANSPORTASI</a></li>
+                    <li><a href="#" onclick="showPage('akomodasi')">AKOMODASI</a></li>
+                    <li>
+                        <a href="#">KEGIATAN</a>
+                        <div class="uk-navbar-dropdown" uk-dropdown>
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-parent">
+                                    <a href="#">Day 1</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="#" onclick="showPage('day1-rundown')">Rundown</a></li>
+                                        <li><a href="#" onclick="showPage('day1-citytour')">City Tour</a></li>
+                                    </ul>
+                                </li>
+                                <li class="uk-parent">
+                                    <a href="#">Day 2</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="#" onclick="showPage('day2-csr')">CSR</a></li>
+                                        <li><a href="#" onclick="showPage('day2-teambuilding')">Team Building</a></li>
+                                        <li><a href="#" onclick="showPage('day2-galadinner')">Gala Dinner</a></li>
+                                    </ul>
+                                </li>
+                                <li class="uk-parent">
+                                    <a href="#">Day 3</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="#" onclick="showPage('day3-singapore')">Rundown Singapore</a></li>
+                                        <li><a href="#" onclick="showPage('day3-johor')">Rundown Johor Baru</a></li>
+                                        <li><a href="#" onclick="showPage('day3-batam')">Rundown Batam to Jakarta</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#" onclick="showPage('lokasi')">LOKASI</a></li>
+                    <li><a href="#" onclick="showPage('dokumentasi')">DOKUMENTASI</a></li>
+                    <li><a href="#" onclick="showPage('wisata')">INFORMASI WISATA</a></li>
+                    <li><a href="#" onclick="showPage('contact')">CONTACT US</a></li>
+                    <li><a href="#" onclick="showPage('absensi')">ABSENSI</a></li>
+                </ul>
+                
+                <!-- Mobile Menu -->
+                <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" uk-toggle>
+                    <span uk-navbar-toggle-icon></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div id="offcanvas" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <ul class="uk-nav uk-nav-default">
+                <li><a href="#" onclick="showPage('home'); UIkit.offcanvas('#offcanvas').hide();">HOME</a></li>
+                <li><a href="#" onclick="showPage('qrcode'); UIkit.offcanvas('#offcanvas').hide();">MY QR CODE</a></li>
+                <li><a href="#" onclick="showPage('transportasi'); UIkit.offcanvas('#offcanvas').hide();">TRANSPORTASI</a></li>
+                <li><a href="#" onclick="showPage('akomodasi'); UIkit.offcanvas('#offcanvas').hide();">AKOMODASI</a></li>
+                <li class="uk-parent">
+                    <a href="#">KEGIATAN</a>
+                    <ul class="uk-nav-sub">
+                        <li class="uk-nav-header">Day 1</li>
+                        <li><a href="#" onclick="showPage('day1-rundown'); UIkit.offcanvas('#offcanvas').hide();">Rundown</a></li>
+                        <li><a href="#" onclick="showPage('day1-citytour'); UIkit.offcanvas('#offcanvas').hide();">City Tour</a></li>
+                        <li class="uk-nav-header">Day 2</li>
+                        <li><a href="#" onclick="showPage('day2-csr'); UIkit.offcanvas('#offcanvas').hide();">CSR</a></li>
+                        <li><a href="#" onclick="showPage('day2-teambuilding'); UIkit.offcanvas('#offcanvas').hide();">Team Building</a></li>
+                        <li><a href="#" onclick="showPage('day2-galadinner'); UIkit.offcanvas('#offcanvas').hide();">Gala Dinner</a></li>
+                        <li class="uk-nav-header">Day 3</li>
+                        <li><a href="#" onclick="showPage('day3-singapore'); UIkit.offcanvas('#offcanvas').hide();">Rundown Singapore</a></li>
+                        <li><a href="#" onclick="showPage('day3-johor'); UIkit.offcanvas('#offcanvas').hide();">Rundown Johor Baru</a></li>
+                        <li><a href="#" onclick="showPage('day3-batam'); UIkit.offcanvas('#offcanvas').hide();">Rundown Batam to Jakarta</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="showPage('lokasi'); UIkit.offcanvas('#offcanvas').hide();">LOKASI</a></li>
+                <li><a href="#" onclick="showPage('dokumentasi'); UIkit.offcanvas('#offcanvas').hide();">DOKUMENTASI</a></li>
+                <li><a href="#" onclick="showPage('wisata'); UIkit.offcanvas('#offcanvas').hide();">INFORMASI WISATA</a></li>
+                <li><a href="#" onclick="showPage('contact'); UIkit.offcanvas('#offcanvas').hide();">CONTACT US</a></li>
+                <li><a href="#" onclick="showPage('absensi'); UIkit.offcanvas('#offcanvas').hide();">ABSENSI</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- HOME PAGE -->
+        <div id="home" class="page-content active">
+            <div class="hero-section">
+                <div class="uk-container">
+                    <h1 class="uk-heading-large uk-margin-bottom">Selamat Datang di Migunesia</h1>
+                    <p class="uk-text-large uk-margin-bottom">Pengalaman terbaik untuk perjalanan bisnis dan wisata Anda</p>
+                    <button class="uk-button uk-button-primary uk-button-large" onclick="showPage('kegiatan')">Lihat Kegiatan</button>
+                </div>
+            </div>
+            
+            <div class="uk-container uk-margin-large-top">
+                <div class="uk-grid-match uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body feature-card">
+                            <h3 class="uk-card-title">Transportasi</h3>
+                            <p>Layanan transportasi yang nyaman dan terpercaya untuk semua kebutuhan perjalanan Anda.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body feature-card">
+                            <h3 class="uk-card-title">Akomodasi</h3>
+                            <p>Pilihan akomodasi terbaik dengan fasilitas lengkap dan pelayanan prima.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body feature-card">
+                            <h3 class="uk-card-title">Kegiatan</h3>
+                            <p>Program kegiatan yang menarik dan terorganisir dengan baik selama 3 hari.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MY QR CODE PAGE -->
+        <div id="qrcode" class="page-content">
+            <div class="uk-container">
+                <h1 class="uk-heading-large uk-text-center">My QR Code</h1>
+                <div class="uk-text-center uk-margin-large-top">
+                    <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-margin-auto">
+                        <h3>QR Code Anda</h3>
+                        <div class="uk-placeholder uk-height-medium uk-flex uk-flex-middle uk-flex-center">
+                            <p>QR Code akan ditampilkan di sini</p>
+                        </div>
+                        <p class="uk-text-meta uk-margin-top">Gunakan QR Code ini untuk absensi dan akses berbagai layanan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TRANSPORTASI PAGE -->
+        <div id="transportasi" class="page-content">
+            <div class="uk-container">
+                <h1 class="uk-heading-large uk-text-center">Transportasi</h1>
+                <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3>Bus Wisata</h3>
+                            <p>Bus wisata AC dengan fasilitas lengkap untuk perjalanan yang nyaman.</p>
+                            <ul class="uk-list uk-list-bullet">
+                                <li>AC dan WiFi</li>
+                                <li>Kursi yang nyaman</li>
+                                <li>Driver berpengalaman</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3>Airport Transfer</h3>
+                            <p>Layanan antar jemput dari dan ke bandara.</p>
+                            <ul class="uk-list uk-list-bullet">
+                                <li>Penjemputan tepat waktu</li>
+                                <li>Kendaraan bersih dan nyaman</li>
+                                <li>Driver profesional</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AKOMODASI PAGE -->
+        <div id="akomodasi" class="page-content">
+            <div class="uk-container">
+                <h1 class="uk-heading-large uk-text-center">Akomodasi</h1>
+                <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <div class="uk-placeholder uk-height-small"></div>
+                            </div>
+                            <div class="uk-card-body">
+                                <h3>Hotel Batam</h3>
+                                <p>Hotel berbintang 4 di pusat kota Batam dengan fasilitas lengkap.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <div class="uk-placeholder uk-height-small"></div>
+                            </div>
+                            <div class="uk-card-body">
+                                <h3>Hotel Singapore</h3>
+                                <p>Hotel mewah di Singapore dengan pemandangan city yang menawan.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <div class="uk-placeholder uk-height-small"></div>
+                            </div>
+                            <div class="uk-card-body">
+                                <h3>Hotel Johor Baru</h3>
+                                <p>Akomodasi nyaman di Johor Baru dengan akses mudah ke berbagai tempat wisata.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DAY 1 RUNDOWN PAGE -->
+        <div id="day1-rundown" class="page-content">
+            <div class="uk-container">
+                <h1 class="uk-heading-large uk-text-center">Day 1 - Rundown</h1>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <div class="uk-grid-small" uk-grid>
+                        <div class="uk-width-1-4@m uk-text-bold">06:00</div>
+                        <div class="uk-width-3-4@m">Berkumpul di titik keberangkatan</div>
+                        <div class="uk-width-1-4@m uk-text-bold">07:00</div>
+                        <div class="uk-width-3-4@m">Keberangkatan ke Batam</div>
+                        <div class="uk-width-1-4@m uk-text-bold">10:00</div>
+                        <div class="uk-width-3-4@m">Tiba di Batam, check-in hotel</div>
+                        <div class="uk-width-1-4@m uk-text-bold">12:00</div>
+                        <div class="uk-width-3-4@m">Makan siang</div>
+                        <div class="uk-width-1-4@m uk-text-bold">14:00</div>
+                        <div class="uk-width-3-4@m">City tour Batam</div>
+                        <div class="uk-width-1-4@m uk-text-bold">18:00</div>
+                        <div class="uk-width-3-4@m">Makan malam</div>
+                        <div class="uk-width-1-4@m uk-text-bold">20:00</div>
+                        <div class="uk-width-3-4@m">Istirahat di hotel</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DAY 1 CITY TOUR PAGE -->
+        <div id="day1-citytour" class="page-content">
+            <div class="uk-container">
+                <h1 class="uk-heading-large uk-text-center">Day 1 - City Tour</h1>
+                <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3>Barelang Bridge</h3>
+                            <p>Jembatan ikonik yang menghubungkan beberapa pulau di Batam.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3>Maha Vihara Duta Maitreya</h3>
+                            <p>Kuil Buddha terbesar di Asia Tenggara dengan arsitektur yang megah.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DAY 2 CSR PAGE -->
+        <div id="day2-csr" class="page-content">
+            <div class="uk-container">
+                <h1 class="uk-heading-large uk-text-center">Day 2 - CSR</h1>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h3>Program Corporate Social Responsibility</h3>
+                    <p>Kegiatan sosial untuk memberikan kontribusi positif kepada masyarakat lokal.</p>
+                    <ul class="uk-list uk-list-bullet">
+                        <li>Kunjungan ke panti asuhan</li>
+                        <li>Donasi dan pemberian bantuan</li>
+                        <li>Interaksi dengan anak-anak</li>
+                        <li>Dokumentasi kegiatan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- DAY 2 TEAM BUILDING PAGE -->
+        <div id="day2-teambuilding" class="page-content">
+            <div class="uk-container">
+                <h1 class="uk-heading-large uk-text-center">Day 2 - Team Building</h1>
+                <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3>Games Outdoor</h3>
+                            <p>Berbagai permainan seru untuk mempererat kerja sama tim.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3>Problem Solving</h3>
+                            <p>Aktivitas pemecahan masalah untuk meningkatkan kolaborasi.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3>Communication</h3>
+                            <p>Latihan komunikasi efektif dalam tim.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DAY 2 GALA DINNER PAGE -->
+        <div id="day2-galadinner" class="page-content">
+            <div class="uk-container">
+                <h1 class="uk-heading-large uk-text-center">Day 2 - Gala Dinner</h1>
+                <div class="uk-card uk-card-default uk-card-body uk-text-center">
+                    <h3>Malam Gala Dinner</h3>
+                    <p class="uk-text-large">Acara makan malam formal dengan dress code elegant</p>
+                    <div class="uk-grid-small uk-margin-top" uk-grid>
+                        <div class="uk-width-1-2@m">
+                            <h4>Waktu</h4>
+                            <p>19:00 - 22:00 WIB</p>
+                        </div>
+                        <div class="uk-width-1-2@m">
+                            <h4>Dress Code</h4>
+                            <p>Formal / Semi Formal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DAY 3 SINGAPORE PAGE -->
+        <div id="day3-singapore" class="page-content">
+            <div class="uk-container">
+                <h1 class="uk-heading-large uk-text-center">Day 3 - Rundown Singapore</h1>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <div class="uk-grid-small" uk-grid>
+                        <div class="uk-width-1-4@m uk-text-bold">07:00</div>
+                        <div class="uk-width-3-4@m">Sarapan dan check-out hotel</div>
+                        <div class="uk-width-1-4@m uk-text-bold">09:00</div>
+                        <div class="uk-width-3-4@m">Perjalanan ke Singapore</div>
+                        <div class="uk-width-1-4@m uk-text-bold">11:00</div>
+                        <div class="uk-width-3-4@m">Tiba di Singapore, city tour</div>
+                        <div class="uk-width-1-4@m uk-text-bold">12:30</div>
+                        <div class="uk-width-3-4@m">Makan siang di Chinatown</div>
+                        <div class="uk-width-1-4@m uk-text-bold">14:00</div>
+                        <div class="uk-width-3-4@m">Kunjungan Marina Bay Sands</div>
+                        <div class="uk-width-1-4@m uk-text-bold">16:00</div>
+                        <div class="uk-width-3-4@m">Gardens by the Bay</div>
+                        <div class="uk-width-1-4@m uk-text-bold">18:00</div>
+                        <div class="uk-width-3-4@m">Makan malam dan shopping</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DAY 3 JOHOR BARU PAGE -->
+        <div id="day3-johor" class="page-content">
+            <div class="uk-container">
+                <h1 class="uk-heading-large uk-text-center">Day 3 - Rundown Johor Baru</h1>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <div class="uk-grid-small" uk-grid>
+                        <div class="uk-width-1-4@m uk-text-bold">20:00</div>
+                        <div class="uk-width-3-4@m">Perjalanan dari Singapore ke Johor Baru</div>
+                        <div class="uk-width-1-4@m uk-text-bold">21:00</div>
+                        <div class="uk-width-3-4@m">Tiba di Johor Baru, check-in hotel</div>
+                        <div class="uk-width-1-4@m uk-text-bold">22:00</div>
+                        <div class="uk-width-3-4@m">Istirahat di hotel</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DAY 3 BATAM TO JAKARTA PAGE -->
+        <div id="day3-batam" class="page-content">
+            <div class="uk-container">
+                <h1 class="uk-heading-large uk-text-center">Day 3 - Rundown Batam to Jakarta</h1>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <div class="uk-grid-small" uk-grid>
+                        <div class="uk-width-1-4@m uk-text-bold">08:00</div>
+                        <div class="uk-width-3-4@m">Sarapan dan check-out hotel</div>
+                        <div class="uk-width-1-4@m uk-text-bold">10:00</div>
+                        <div class="uk-width-3-4@m">Perjalanan kembali ke Batam</div>
+                        <div class="uk-width-1-4@m uk-text-bold">12:00</div>
+                        <div class="uk-width-3-4@m">Makan siang di Batam</div>
+                        <div class="uk-width-1-4@m uk-text-bold">14:00</div>
+                        <div class="uk-width-3-4@m">Persiapan keberangkatan ke Jakarta</div>
+                        <div class="uk-width-1-4@m uk-text-bold">16:00</div>
+                        <div class="uk-width-3-4@m">Keberangkatan ke Jakarta</div>
+                        <div class="uk-width-1-4@m uk-text-bold">19:00</div>
+                        <div class="uk-width-3-4@m">Tiba di Jakarta</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LOKASI PAGE -->
+        <div id="lokasi" class="page-content">
+            <div class="uk-container">
+                <h1 class="uk-heading-large uk-text-center">Lokasi</h1>
+                <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3>Titik Kumpul</h3>
+                            <p><strong>Jakarta</strong></p>
+                            <p>Kantor Pusat Migunesia<br>
+                            Jl. Sudirman No. 123<br>
+                            Jakarta Pusat</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3>Destinasi</h3>
+                            <ul class="uk-list uk-list-bullet">
+                                <li>Batam, Indonesia</li>
+                                <li>Singapore</li>
+                                <li>Johor Baru, Malaysia</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DOKUMENTASI PAGE -->
+        <div id="dokumentasi" class="page-content">
+            <div class="uk-container">
+                <h1 class="uk-heading-large uk-text-center">Dokumentasi</h1>
+                <div class="uk-grid-small uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <div class="uk-placeholder uk-height-medium uk-flex uk-flex-middle uk-flex-center">
+                                    <span>Photo 1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <div class="uk-placeholder uk-height-medium uk-flex uk-flex-middle uk-flex-center">
+                                    <span>Photo 2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <div class="uk-placeholder uk-height-medium uk-flex uk-flex-middle uk-flex-center">
+                                    <span>Photo 3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- INFORMASI WISATA PAGE -->
+        <div id="wisata" class="page-content">
+            <div class="uk-container">
+                <h1 class="uk-heading-large uk-text-center">Informasi Wisata</h1>
+                <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3>Batam</h3>
+                            <ul class="uk-list uk-list-bullet">
+                                <li>Barelang Bridge</li>
+                                <li>Maha Vihara Duta Maitreya</li>
+                                <li>Pantai Nongsa</li>
+                                <li>Batam Centre</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3>Singapore</h3>
+                            <ul class="uk-list uk-list-bullet">
+                                <li>Marina Bay Sands</li>
+                                <li>Gardens by the Bay</li>
+                                <li>Chinatown</li>
+                                <li>Orchard Road</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3>Johor Baru</h3>
+                            <ul class="uk-list uk-list-bullet">
+                                <li>Legoland Malaysia</li>
+                                <li>Johor Premium Outlets</li>
+                                <li>Sultan Abu Bakar Mosque</li>
+                                <li>Danga Bay</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT US PAGE -->
+        <div id="contact" class="page-content">
+            <div class="uk-container">
+                <h1 class="uk-heading-large uk-text-center">Contact Us</h1>
+                <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3>Informasi Kontak</h3>
+                            <p><strong>PT. Migunesia</strong></p>
+                            <p>📍 Jl. Sudirman No. 123<br>Jakarta Pusat 10220</p>
+                            <p>📞 Telepon: (021) 123-4567</p>
+                            <p>📱 WhatsApp: +62 812-3456-7890</p>
+                            <p>✉️ Email: info@migunesia.com</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3>Kirim Pesan</h3>
+                            <form class="uk-form-stacked">
+                                <div class="uk-margin">
+                                    <input class="uk-input" type="text" placeholder="Nama Lengkap">
+                                </div>
+                                <div class="uk-margin">
+                                    <input class="uk-input" type="email" placeholder="Email">
+                                </div>
+                                <div class="uk-margin">
+                                    <textarea class="uk-textarea" rows="4" placeholder="Pesan Anda"></textarea>
+                                </div>
+                                <div class="uk-margin">
+                                    <button class="uk-button uk-button-primary">Kirim Pesan</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ABSENSI PAGE -->
+        <div id="absensi" class="page-content">
+            <div class="uk-container">
+                <h1 class="uk-heading-large uk-text-center">Absensi</h1>
+                <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-margin-auto">
+                    <h3 class="uk-text-center">Form Absensi</h3>
+                    <form class="uk-form-stacked">
+                        <div class="uk-margin">
+                            <label class="uk-form-label">Nama Lengkap</label>
+                            <input class="uk-input" type="text" placeholder="Masukkan nama lengkap">
+                        </div>
+                        <div class="uk-margin">
+                            <label class="uk-form-label">ID Peserta</label>
+                            <input class="uk-input" type="text" placeholder="Masukkan ID peserta">
+                        </div>
+                        <div class="uk-margin">
+                            <label class="uk-form-label">Kegiatan</label>
+                            <select class="uk-select">
+                                <option>Pilih kegiatan</option>
+                                <option>Day 1 - City Tour</option>
+                                <option>Day 2 - CSR</option>
+                                <option>Day 2 - Team Building</option>
+                                <option>Day 2 - Gala Dinner</option>
+                                <option>Day 3 - Singapore Tour</option>
+                            </select>
+                        </div>
+                        <div class="uk-margin">
+                            <button class="uk-button uk-button-primary uk-width-1-1">Submit Absensi</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="uk-section uk-section-secondary uk-margin-large-top">
+        <div class="uk-container">
+            <div class="uk-text-center">
+                <p>&copy; 2025 Migunesia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- UIKit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        $(document).ready(function() {
+            // Initialize UIKit components
+            UIkit.use(UIkit);
+            
+            // Show home page by default
+            showPage('home');
+        });
+
+        function showPage(pageId) {
+            // Hide all pages
+            $('.page-content').removeClass('active');
+            
+            // Show selected page
+            $('#' + pageId).addClass('active');
+            
+            // Scroll to top
+            $('html, body').animate({scrollTop: 0}, 300);
+        }
+
+        // Handle mobile menu click
+        $('.uk-offcanvas-bar a').on('click', function() {
+            // Close mobile menu
+            UIkit.offcanvas('#offcanvas').hide();
+        });
+    </script>
+</body>
+</html>
