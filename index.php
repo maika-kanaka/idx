@@ -124,7 +124,7 @@ if (!in_array($page, $allowed_pages)) {
     <!-- Main Content -->
     <main>
         <!-- HOME PAGE -->
-        <div id="home" class="page-content active">
+        <div id="home" class="page-content active" style="min-height: auto;">
             <?php include 'pages/home.php'; ?>
         </div>
 
@@ -241,8 +241,10 @@ if (!in_array($page, $allowed_pages)) {
             const randomBg = Math.random() < 0.5 ? 'bg-option-1' : 'bg-option-2';
             
             // Show selected page with random background
-            const selectedPage = $('#' + pageId);
-            selectedPage.addClass('active ' + randomBg);
+            if(pageId != 'home'){
+                const selectedPage = $('#' + pageId);
+                selectedPage.addClass('active ' + randomBg);
+            }
             
             // Scroll to top
             $('html, body').animate({scrollTop: 0}, 300);

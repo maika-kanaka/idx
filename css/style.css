@@ -138,3 +138,94 @@ FOOTER
 footer {
     padding: 20px !important;
 }
+
+/**
+LOCATION CARDS
+*/
+.hotel-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+
+    background: transparent;
+}
+
+.hotel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+}
+
+.hotel-card .uk-card-media-top {
+    position: relative;
+    overflow: hidden;
+}
+
+.hotel-card .uk-card-media-top img {
+    transition: transform 0.3s ease;
+}
+
+.hotel-card:hover .uk-card-media-top img {
+    transform: scale(1.05);
+}
+
+.hotel-card .uk-badge {
+    background-color: rgba(90, 138, 107, 0.9) !important;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.hotel-card .view-maps-btn {
+    background-color: #22605b !important;
+    border: none !important;
+    border-radius: 25px;
+    padding: 12px 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    color: white;
+    padding: 6px 14px;
+    max-width: 200px;
+}
+
+.hotel-card .view-maps-btn  a {
+    color: white;
+}
+
+.hotel-card .view-maps-btn:hover {
+    background-color: #4a7559 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(90, 138, 107, 0.4);
+}
+
+.hotel-card .uk-card-body {
+    background: #fff;
+    padding-bottom: 40px !important;
+    
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.location-info-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.location-info-card:hover {
+    transform: translateY(-3px);
+}
+
+.location-info-card h3 {
+    color: white !important;
+}
+
+@media (min-width: 1200px) {
+    #lokasi .uk-card-body {
+        padding: 20px 40px;
+    }
+}
