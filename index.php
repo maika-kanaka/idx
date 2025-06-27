@@ -28,7 +28,7 @@ if (!in_array($page, $allowed_pages)) {
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="uk-navbar-container navbar-transparent" uk-navbar uk-sticky>
+    <nav class="uk-navbar-container navbar-transparent" uk-navbar uk-sticky id="main-navbar" style="display: none;">
         <div class="uk-container">
             <div class="uk-navbar-left">
                 <a class="uk-navbar-item uk-logo" href="#" onclick="showPage('home')">
@@ -121,10 +121,42 @@ if (!in_array($page, $allowed_pages)) {
         </div>
     </div>
 
+    <!-- Privacy Agreement Overlay -->
+    <div id="privacy-overlay" class="privacy-overlay">
+        <div class="privacy-content">
+            <div class="uk-container uk-container-small">
+                <div class="uk-card uk-card-default uk-card-body uk-text-center">
+                    <div class="uk-margin-bottom">
+                        <img src="imgs/logo1_black.png" alt="Migunesia Logo" style="max-width: 200px;">
+                    </div>
+                    
+                    <div class="uk-text-left uk-margin">
+                        <p class="uk-text-small">
+                            Pemrosesan data pribadi karyawan digunakan hanya untuk kepentingan travel/ akomodasi peserta TB serta pengelolaan data pribadi karyawan dilakukan sesuai dengan Pedoman Pelindungan Data Pribadi PT Bursa Efek Indonesia versi 1.0 Tahun 2025.
+                        </p>
+                    </div>
+                    
+                    <div class="uk-margin">
+                        <label class="uk-text-small">
+                            <input class="uk-checkbox" type="checkbox" id="privacy-checkbox"> 
+                            Saya setuju dengan ketentuan penggunaan data pribadi di atas
+                        </label>
+                    </div>
+                    
+                    <div class="uk-margin">
+                        <button class="uk-button uk-button-primary uk-button-large" id="continue-btn" disabled onclick="acceptPrivacy()">
+                            Lanjutkan
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Main Content -->
-    <main>
+    <main id="main-content" style="display: none;">
         <!-- HOME PAGE -->
-        <div id="home" class="page-content active" style="min-height: auto;">
+        <div id="home" class="page-content" style="min-height: auto;">
             <?php include 'pages/home.php'; ?>
         </div>
 
@@ -224,11 +256,43 @@ if (!in_array($page, $allowed_pages)) {
     <script>
         $(document).ready(function() {
             // Initialize UIKit components
-            UIkit.use(UIkit);
+            // UIkit.use(UIkit);
+            
+            // Check if privacy has been accepted
+            showPrivacyOverlay();
+            
+            // Handle checkbox change
+            $('#privacy-checkbox').change(function() {
+                console.log('checkbox changed');
+                const isChecked = $(this).is(':checked');
+                $('#continue-btn').prop('disabled', !isChecked);
+            });
+        });
+
+        function showPrivacyOverlay() {
+            $('#privacy-overlay').show();
+            $('#main-content').hide();
+            $('#main-navbar').hide();
+        }
+
+        function showMainContent() {
+            $('#privacy-overlay').hide();
+            $('#main-content').show();
+            $('#main-navbar').show();
             
             // Show home page by default
             showPage('home');
-        });
+        }
+
+        function acceptPrivacy() {
+            const isChecked = $('#privacy-checkbox').is(':checked');
+            if (isChecked) {                
+                // Show main content with fade effect
+                $('#privacy-overlay').fadeOut(500, function() {
+                    showMainContent();
+                });
+            }
+        }
 
         function showPage(pageId) {
             // Hide all pages
@@ -244,17 +308,20 @@ if (!in_array($page, $allowed_pages)) {
             if(pageId != 'home'){
                 const selectedPage = $('#' + pageId);
                 selectedPage.addClass('active ' + randomBg);
+            }else{
+                const selectedPage = $('#home');
+                selectedPage.addClass('active ' + randomBg);
+            }
+
+            // Trigger animations for specific pages
+            if(pageId === 'qrcode' || pageId === 'lokasi') {
+                // Force reflow to restart animations
+                selectedPage[0].offsetHeight;
                 
-                // Trigger animations for specific pages
-                if(pageId === 'qrcode' || pageId === 'lokasi') {
-                    // Force reflow to restart animations
-                    selectedPage[0].offsetHeight;
-                    
-                    // Add a small delay to ensure smooth animation start
-                    setTimeout(() => {
-                        selectedPage.addClass('animate-in');
-                    }, 50);
-                }
+                // Add a small delay to ensure smooth animation start
+                setTimeout(() => {
+                    selectedPage.addClass('animate-in');
+                }, 50);
             }
             
             // Scroll to top
@@ -265,6 +332,19 @@ if (!in_array($page, $allowed_pages)) {
         $('.uk-offcanvas-bar a').on('click', function() {
             // Close mobile menu
             UIkit.offcanvas('#offcanvas').hide();
+        });
+
+        // Function to reset privacy agreement (for testing)
+        function resetPrivacy() {
+            localStorage.removeItem('privacy-accepted');
+            location.reload();
+        }
+
+        // Add keyboard shortcut for reset (Ctrl+Shift+R)
+        $(document).keydown(function(e) {
+            if (e.ctrlKey && e.shiftKey && e.keyCode === 82) {
+                resetPrivacy();
+            }
         });
     </script>
 </body>
