@@ -3,9 +3,20 @@
     width: auto;
 }
 
+#component-top-logo img {
+    width: 60px;
+    margin: 20px 10px 0px 10px;
+}
+
+.uk-heading-large {
+    color: #f7ecb7;
+    font-size: 3rem;
+    margin: 15px;
+}
+
 .page-content {
     display: none;
-    min-height: 70vh;
+    min-height: 100vh;
 }
 
 .page-content.active {
@@ -86,6 +97,37 @@ HELPER CLASS
 @media (min-width: 768px) {
     .hide-desktop {
         display: none;
+    }
+}
+
+/**
+PAGE BACKGROUNDS
+*/
+.page-content {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: background-image 0.5s ease-in-out;
+}
+
+/* Background options for mobile */
+.bg-option-1 {
+    background-image: url('../imgs/bg-opsi1-mobile.jpg');
+}
+
+.bg-option-2 {
+    background-image: url('../imgs/bg-opsi2-mobile.png');
+}
+
+/* Background options for desktop */
+@media (min-width: 768px) {
+    .bg-option-1 {
+        background-image: url('../imgs/bg-opsi1-desktop.jpg');
+    }
+    
+    .bg-option-2 {
+        background-image: url('../imgs/bg-opsi2-desktop.png');
     }
 }
 

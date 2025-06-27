@@ -1,4 +1,5 @@
 <div class="uk-container">
+    <?php include 'components/logo.php'; ?>
     <h1 class="uk-heading-large uk-text-center">Akomodasi</h1>
     <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
         <div>

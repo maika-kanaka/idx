@@ -73,7 +73,7 @@ if (!in_array($page, $allowed_pages)) {
                         </div>
                     </li>
                     <li><a href="#" onclick="showPage('lokasi')">LOKASI</a></li>
-                    <li><a href="#" onclick="showPage('dokumentasi')">DOKUMENTASI</a></li>
+                    <li><a href="https://google.com" target="_blank">DOKUMENTASI</a></li>
                     <li><a href="#" onclick="showPage('wisata')">INFORMASI WISATA</a></li>
                     <li><a href="#" onclick="showPage('contact')">CONTACT US</a></li>
                     <li><a href="#" onclick="showPage('absensi')">ABSENSI</a></li>
@@ -113,7 +113,7 @@ if (!in_array($page, $allowed_pages)) {
                     </ul>
                 </li>
                 <li><a href="#" onclick="showPage('lokasi'); UIkit.offcanvas('#offcanvas').hide();">LOKASI</a></li>
-                <li><a href="#" onclick="showPage('dokumentasi'); UIkit.offcanvas('#offcanvas').hide();">DOKUMENTASI</a></li>
+                <li><a href="https://google.com" target="_blank">DOKUMENTASI</a></li>
                 <li><a href="#" onclick="showPage('wisata'); UIkit.offcanvas('#offcanvas').hide();">INFORMASI WISATA</a></li>
                 <li><a href="#" onclick="showPage('contact'); UIkit.offcanvas('#offcanvas').hide();">CONTACT US</a></li>
                 <li><a href="#" onclick="showPage('absensi'); UIkit.offcanvas('#offcanvas').hide();">ABSENSI</a></li>
@@ -188,11 +188,6 @@ if (!in_array($page, $allowed_pages)) {
             <?php include 'pages/lokasi.php'; ?>
         </div>
 
-        <!-- DOKUMENTASI PAGE -->
-        <div id="dokumentasi" class="page-content">
-            <?php include 'pages/dokumentasi.php'; ?>
-        </div>
-
         <!-- INFORMASI WISATA PAGE -->
         <div id="wisata" class="page-content">
             <?php include 'pages/wisata.php'; ?>
@@ -239,8 +234,15 @@ if (!in_array($page, $allowed_pages)) {
             // Hide all pages
             $('.page-content').removeClass('active');
             
-            // Show selected page
-            $('#' + pageId).addClass('active');
+            // Remove existing background classes
+            $('.page-content').removeClass('bg-option-1 bg-option-2');
+            
+            // Generate random background for the page
+            const randomBg = Math.random() < 0.5 ? 'bg-option-1' : 'bg-option-2';
+            
+            // Show selected page with random background
+            const selectedPage = $('#' + pageId);
+            selectedPage.addClass('active ' + randomBg);
             
             // Scroll to top
             $('html, body').animate({scrollTop: 0}, 300);
