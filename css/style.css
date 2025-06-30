@@ -1118,3 +1118,113 @@ TRANSPORTASI PAGE STYLES
 .form-group input {
     box-sizing: border-box;
 }
+
+/**
+ACCOMMODATION ENHANCED STYLES
+*/
+#akomodasi .hotel-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#akomodasi .hotel-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+#akomodasi .hotel-card .uk-card-media-top {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
+
+#akomodasi .hotel-card .uk-card-media-top img {
+    transition: transform 0.4s ease;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#akomodasi .hotel-card:hover .uk-card-media-top img {
+    transform: scale(1.08);
+}
+
+#akomodasi .hotel-card .uk-card-body {
+    padding: 24px 20px;
+    background: white;
+}
+
+#akomodasi .hotel-card .uk-card-title {
+    color: #2c3e50;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+#akomodasi .hotel-card .uk-badge {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    color: #6c757d;
+    border: 1px solid #dee2e6;
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 6px 16px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#akomodasi .hotel-card h4 {
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 1.15rem;
+    margin: 8px 0 16px 0;
+}
+
+#akomodasi .hotel-card .view-maps-btn {
+    background: linear-gradient(135deg, #2d6a4f 0%, #40916c 100%);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(45, 106, 79, 0.3);
+}
+
+#akomodasi .hotel-card .view-maps-btn:hover {
+    background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(45, 106, 79, 0.4);
+}
+
+#akomodasi .hotel-card .view-maps-btn a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Mobile responsiveness for accommodation */
+@media (max-width: 768px) {
+    #akomodasi .hotel-card .uk-card-media-top {
+        height: 180px;
+    }
+    
+    #akomodasi .hotel-card .uk-card-body {
+        padding: 20px 16px;
+    }
+    
+    #akomodasi .hotel-card .uk-card-title {
+        font-size: 1.1rem;
+    }
+    
+    #akomodasi .hotel-card h4 {
+        font-size: 1rem;
+    }
+}

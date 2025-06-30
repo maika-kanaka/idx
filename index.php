@@ -20,11 +20,12 @@ if (!in_array($page, $allowed_pages)) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Migunesia - Company Website</title>
+    <title>IDX - Trust in Motion</title>
     
     <!-- UIKit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rundown.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -124,7 +125,7 @@ if (!in_array($page, $allowed_pages)) {
     <!-- Privacy Agreement Overlay -->
     <div id="privacy-overlay" class="privacy-overlay">
         <div class="privacy-content">
-            <div class="uk-container uk-container-small">
+            <div class="uk-container uk-container-small" style="padding-left:0;">
                 <div class="uk-card uk-card-default uk-card-body uk-text-center">
                     <div class="uk-margin-bottom">
                         <img src="imgs/logo1_black.png" alt="Migunesia Logo" style="max-width: 200px;">

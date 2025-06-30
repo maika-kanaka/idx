@@ -1,4 +1,6 @@
 <div class="uk-container">
+    <?php include 'components/logo.php'; ?>
+
     <h1 class="uk-heading-large uk-text-center">Absensi</h1>
     <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-margin-auto">
         <h3 class="uk-text-center">Form Absensi</h3>
@@ -27,4 +29,6 @@
             </div>
         </form>
     </div>
+
+    <?php include 'components/logo-bottom.php'; ?>
 </div> 

@@ -4,11 +4,11 @@
         <div>
             <div class="uk-card uk-card-default uk-card-body">
                 <h3>Informasi Kontak</h3>
-                <p><strong>PT. Migunesia</strong></p>
+                <p><strong>PT. NANANA</strong></p>
                 <p>📍 Jl. Sudirman No. 123<br>Jakarta Pusat 10220</p>
                 <p>📞 Telepon: (021) 123-4567</p>
                 <p>📱 WhatsApp: +62 812-3456-7890</p>
-                <p>✉️ Email: info@migunesia.com</p>
+                <p>✉️ Email: info@nanana.com</p>
             </div>
         </div>
         <div>

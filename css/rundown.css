@@ -1,0 +1,92 @@
+.itinerary-wrapper {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px 20px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    text-align: left;
+    background: rgba(255, 255, 255, 1);
+    height: 500px;
+    overflow: auto;
+}
+
+.itinerary-wrapper h2 {
+    color: #003366;
+    margin-bottom: 5px;
+}
+
+.itinerary-wrapper h3 {
+    color: #000066;
+    margin-top: 20px;
+}
+
+.itinerary-section-title.green {
+    color: green;
+    margin-top: 40px;
+}
+
+.itinerary-section-title.blue {
+    color: #0055cc;
+    margin-top: 40px;
+}
+
+.itinerary-timeline {
+    border-left: 4px solid #0055cc;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+
+.itinerary-item {
+    margin: 15px 0;
+    position: relative;
+}
+
+.itinerary-item::before {
+    content: '';
+    position: absolute;
+    left: -13px;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    background-color: #0055cc;
+    border-radius: 50%;
+}
+
+.itinerary-time {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.itinerary-desc {
+    font-size: 0.95em;
+    line-height: 1.5em;
+}
+
+.itinerary-desc em {
+    color: #666;
+    font-style: italic;
+}
+
+.uk-slideshow-items,
+.uk-slideshow-items>li,
+.uk-slideshow-items>div {
+    overflow: visible !important;
+}
+
+.label-slideshow-item {
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    bottom: -160px;
+    text-align: center;
+    z-index: 9999;
+}
+
+@media (max-width: 600px) {
+    .label-slideshow-item {
+        bottom: -320px;
+    }
+}
