@@ -76,7 +76,7 @@ if (!in_array($page, $allowed_pages)) {
                     <li><a href="#" onclick="showPage('lokasi')">LOKASI</a></li>
                     <li><a href="https://google.com" target="_blank">DOKUMENTASI</a></li>
                     <li><a href="#" onclick="showPage('wisata')">INFORMASI WISATA</a></li>
-                    <li><a href="#" onclick="showPage('contact')">CONTACT US</a></li>
+                    <li><a href="https://wa.me/6281111111?text=contact us" target="_blank">CONTACT US</a></li>
                     <li><a href="#" onclick="showPage('absensi')">ABSENSI</a></li>
                 </ul>
                 

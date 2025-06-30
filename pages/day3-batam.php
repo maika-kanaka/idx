@@ -1,4 +1,6 @@
 <div class="uk-container">
+    <?php include 'components/logo.php'; ?>
+
     <h1 class="uk-heading-large uk-text-center">Day 3 - Rundown Batam to Jakarta</h1>
     <div class="uk-card uk-card-default uk-card-body">
         <div class="uk-grid-small" uk-grid>
@@ -16,4 +18,6 @@
             <div class="uk-width-3-4@m">Tiba di Jakarta</div>
         </div>
     </div>
+
+    <?php include 'components/logo-bottom.php'; ?>
 </div> 
