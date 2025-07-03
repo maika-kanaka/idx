@@ -4,7 +4,7 @@
             <img src="https://portal.migunesia.com/storage/anu-anu-builder/event-2352/2352-gallery-685a52275a395.png" alt="Logo" class="logo">
         </div>
         <div class="uk-width-auto">
-            <img src="https://portal.migunesia.com/storage/anu-anu-builder/event-2352/2352-gallery-685a54a2da20a.png" alt="Logo" class="logo">
+            <img src="https://guestbook.migunesia.com/storage/_custom-apps/aku-investor-saham.png" alt="Logo" class="logo">
         </div>
     </div>
 </div>

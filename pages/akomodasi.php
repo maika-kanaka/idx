@@ -15,35 +15,47 @@
                     </div>
 
                     <div class="uk-card-body uk-text-center">
-                        <h3 class="uk-card-title uk-margin-small-bottom" style="color: #333; font-weight: 600; font-size: 1.25rem;">Swiss-Belhotel Harbour Bay</h3>
+                        <h3 class="uk-card-title uk-margin-small-bottom replace-me-html" data-field="additional[]" style="color: #333; font-weight: 600; font-size: 1.25rem;">
+                            Swiss-Belhotel Harbour Bay
+                        </h3>
                         
                         <div style='border: 2px solid #fff; border: 1px solid #22605b; border-radius: 30px; margin-bottom: 15px;'>
                             <div class="uk-margin-small-top uk-margin-small-bottom">
-                                <span class="uk-badge uk-text-small" style="background-color: #f0f0f0; color: #666; padding: 4px 12px; border-radius: 12px; font-weight: 500;">Roommate</span>
+                                <span class="uk-badge uk-text-small" style="background-color: #f0f0f0; color: #000 !important; padding: 4px 12px; border-radius: 12px; font-weight: 500;">Roommate</span>
                             </div>
                             
-                            <h4 class="uk-margin-small-bottom" style="margin-top: 0px; color: #333; font-weight: 600; font-size: 1.1rem;">
-                                Roos Amalia
+                            <h4 class="uk-margin-small-bottom replace-me-html" data-field="additional[]" style="margin-top: 0px; color: #333; font-weight: 600; font-size: 1.1rem;">
+                                -
                             </h4>
                         </div>
 
                         <div style='border: 2px solid #fff; border: 1px solid #22605b; border-radius: 30px; margin-bottom: 15px;'>
                             <div class="uk-margin-small-top uk-margin-small-bottom">
-                                <span class="uk-badge uk-text-small" style="background-color: #e8f4f3; color: #22605b; padding: 4px 12px; border-radius: 12px; font-weight: 500;">Kloter</span>
+                                <span class="uk-badge uk-text-small" style="background-color: #e8f4f3; color: #000 !important; padding: 4px 12px; border-radius: 12px; font-weight: 500;">Asal Divisi Roommate</span>
                             </div>
                             
-                            <h4 class="uk-margin-small-bottom" style="margin-top: 0px; color: #333; font-weight: 600; font-size: 1.1rem;">
-                                Kloter 1
+                            <h4 class="uk-margin-small-bottom replace-me-html" data-field="additional[4919]" style="margin-top: 0px; color: #333; font-weight: 600; font-size: 1.1rem;">
+                                -
                             </h4>
                         </div>
 
                         <div style='border: 2px solid #fff; border: 1px solid #22605b; border-radius: 30px;'>
                             <div class="uk-margin-small-top uk-margin-small-bottom">
-                                <span class="uk-badge uk-text-small" style="background-color: #fff3cd; color: #856404; padding: 4px 12px; border-radius: 12px; font-weight: 500;">Tour Leader</span>
+                                <span class="uk-badge uk-text-small" style="background-color: #fff3cd; color: #000 !important; padding: 4px 12px; border-radius: 12px; font-weight: 500;">Tour Leader</span>
                             </div>
                             
                             <h4 class="uk-margin-small-bottom" style="margin-top: 0px; color: #333; font-weight: 600; font-size: 1.1rem;">
-                                Ahmad Rizki
+                                -
+                            </h4>
+                        </div>
+
+                        <div style='border: 2px solid #fff; border: 1px solid #22605b; border-radius: 30px; margin-bottom: 15px;'>
+                            <div class="uk-margin-small-top uk-margin-small-bottom">
+                                <span class="uk-badge uk-text-small" style="background-color: #f0f0f0; color: #000 !important; padding: 4px 12px; border-radius: 12px; font-weight: 500;">Kloter</span>
+                            </div>
+                            
+                            <h4 class="uk-margin-small-bottom replace-me-html" data-field="additional[]" style="margin-top: 0px; color: #333; font-weight: 600; font-size: 1.1rem;">
+                                -
                             </h4>
                         </div>
                         

@@ -32,52 +32,50 @@ if (!in_array($page, $allowed_pages)) {
     <nav class="uk-navbar-container navbar-transparent" uk-navbar uk-sticky id="main-navbar" style="display: none;">
         <div class="uk-container">
             <div class="uk-navbar-left">
-                <a class="uk-navbar-item uk-logo" href="#" onclick="showPage('home')">
+                <a class="uk-navbar-item uk-logo" href="javascript:void(0)" onclick="showPage('home')">
                     <img src="https://guestbook.migunesia.com/storage/anu-anu-builder/event-2352/logo1.png" alt="Migunesia Logo" class="logo">
                 </a>
             </div>
             
             <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav uk-visible@m">
-                    <li><a href="#" onclick="showPage('home')">HOME</a></li>
-                    <li><a href="#" onclick="showPage('qrcode')">MY QR CODE</a></li>
-                    <li><a href="#" onclick="showPage('transportasi')">TRANSPORTASI</a></li>
-                    <li><a href="#" onclick="showPage('akomodasi')">AKOMODASI</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('home')">HOME</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('qrcode')">MY QR CODE</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('transportasi')">TRANSPORTASI</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('akomodasi')">AKOMODASI</a></li>
                     <li>
-                        <a href="#">KEGIATAN</a>
+                        <a href="javascript:void(0)">KEGIATAN</a>
                         <div class="uk-navbar-dropdown" uk-dropdown>
                             <ul class="uk-nav uk-navbar-dropdown-nav">
                                 <li class="uk-parent">
-                                    <a href="#">Day 1</a>
+                                    <a href="javascript:void(0)">Day 1</a>
                                     <ul class="uk-nav-sub">
-                                        <li><a href="#" onclick="showPage('day1-rundown')">Rundown</a></li>
-                                        <li><a href="#" onclick="showPage('day1-citytour')">City Tour</a></li>
+                                        <li><a href="javascript:void(0)" onclick="showPage('day1-rundown')">Rundown</a></li>
+                                        <li><a href="javascript:void(0)" onclick="showPage('day1-citytour')">City Tour</a></li>
                                     </ul>
                                 </li>
                                 <li class="uk-parent">
-                                    <a href="#">Day 2</a>
+                                    <a href="javascript:void(0)">Day 2</a>
                                     <ul class="uk-nav-sub">
-                                        <li><a href="#" onclick="showPage('day2-csr')">CSR</a></li>
-                                        <li><a href="#" onclick="showPage('day2-teambuilding')">Team Building</a></li>
-                                        <li><a href="#" onclick="showPage('day2-galadinner')">Gala Dinner</a></li>
+                                        <li><a href="javascript:void(0)" onclick="showPage('day2-csr')">CSR</a></li>
+                                        <li><a href="javascript:void(0)" onclick="showPage('day2-teambuilding')">Team Building</a></li>
+                                        <li><a href="javascript:void(0)" onclick="showPage('day2-galadinner')">Gala Dinner</a></li>
                                     </ul>
                                 </li>
                                 <li class="uk-parent">
-                                    <a href="#">Day 3</a>
+                                    <a href="javascript:void(0)">Day 3</a>
                                     <ul class="uk-nav-sub">
-                                        <li><a href="#" onclick="showPage('day3-singapore')">Rundown Singapore</a></li>
-                                        <li><a href="#" onclick="showPage('day3-johor')">Rundown Johor Baru</a></li>
-                                        <li><a href="#" onclick="showPage('day3-batam')">Rundown Batam to Jakarta</a></li>
+                                        <li><a href="javascript:void(0)" onclick="showPage('day3-singapore')">Tata cara tour</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </div>
                     </li>
-                    <li><a href="#" onclick="showPage('lokasi')">LOKASI</a></li>
-                    <li><a href="https://google.com" target="_blank">DOKUMENTASI</a></li>
-                    <li><a href="#" onclick="showPage('wisata')">INFORMASI WISATA</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('lokasi')">LOKASI</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/17TeBO97OlkSm1yZaPMHythqPakF9dDqf" target="_blank">DOKUMENTASI</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('wisata')">INFORMASI WISATA</a></li>
                     <li><a href="https://wa.me/6281111111?text=contact us" target="_blank">CONTACT US</a></li>
-                    <li><a href="#" onclick="showPage('absensi')">ABSENSI</a></li>
+                    
                 </ul>
                 
                 <!-- Mobile Menu -->
@@ -93,31 +91,29 @@ if (!in_array($page, $allowed_pages)) {
         <div class="uk-offcanvas-bar">
             <button class="uk-offcanvas-close" type="button" uk-close></button>
             <ul class="uk-nav uk-nav-default">
-                <li><a href="#" onclick="showPage('home'); UIkit.offcanvas('#offcanvas').hide();">HOME</a></li>
-                <li><a href="#" onclick="showPage('qrcode'); UIkit.offcanvas('#offcanvas').hide();">MY QR CODE</a></li>
-                <li><a href="#" onclick="showPage('transportasi'); UIkit.offcanvas('#offcanvas').hide();">TRANSPORTASI</a></li>
-                <li><a href="#" onclick="showPage('akomodasi'); UIkit.offcanvas('#offcanvas').hide();">AKOMODASI</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('home'); UIkit.offcanvas('#offcanvas').hide();">HOME</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('qrcode'); UIkit.offcanvas('#offcanvas').hide();">MY QR CODE</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('transportasi'); UIkit.offcanvas('#offcanvas').hide();">TRANSPORTASI</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('akomodasi'); UIkit.offcanvas('#offcanvas').hide();">AKOMODASI</a></li>
                 <li class="uk-parent">
-                    <a href="#">KEGIATAN</a>
+                    <a href="javascript:void(0)">KEGIATAN</a>
                     <ul class="uk-nav-sub">
                         <li class="uk-nav-header">Day 1</li>
-                        <li><a href="#" onclick="showPage('day1-rundown'); UIkit.offcanvas('#offcanvas').hide();">Rundown</a></li>
-                        <li><a href="#" onclick="showPage('day1-citytour'); UIkit.offcanvas('#offcanvas').hide();">City Tour</a></li>
+                        <li><a href="javascript:void(0)" onclick="showPage('day1-rundown'); UIkit.offcanvas('#offcanvas').hide();">Rundown</a></li>
+                        <li><a href="javascript:void(0)" onclick="showPage('day1-citytour'); UIkit.offcanvas('#offcanvas').hide();">City Tour</a></li>
                         <li class="uk-nav-header">Day 2</li>
-                        <li><a href="#" onclick="showPage('day2-csr'); UIkit.offcanvas('#offcanvas').hide();">CSR</a></li>
-                        <li><a href="#" onclick="showPage('day2-teambuilding'); UIkit.offcanvas('#offcanvas').hide();">Team Building</a></li>
-                        <li><a href="#" onclick="showPage('day2-galadinner'); UIkit.offcanvas('#offcanvas').hide();">Gala Dinner</a></li>
+                        <li><a href="javascript:void(0)" onclick="showPage('day2-csr'); UIkit.offcanvas('#offcanvas').hide();">CSR</a></li>
+                        <li><a href="javascript:void(0)" onclick="showPage('day2-teambuilding'); UIkit.offcanvas('#offcanvas').hide();">Team Building</a></li>
+                        <li><a href="javascript:void(0)" onclick="showPage('day2-galadinner'); UIkit.offcanvas('#offcanvas').hide();">Gala Dinner</a></li>
                         <li class="uk-nav-header">Day 3</li>
-                        <li><a href="#" onclick="showPage('day3-singapore'); UIkit.offcanvas('#offcanvas').hide();">Rundown Singapore</a></li>
-                        <li><a href="#" onclick="showPage('day3-johor'); UIkit.offcanvas('#offcanvas').hide();">Rundown Johor Baru</a></li>
-                        <li><a href="#" onclick="showPage('day3-batam'); UIkit.offcanvas('#offcanvas').hide();">Rundown Batam to Jakarta</a></li>
+                        <li><a href="javascript:void(0)" onclick="showPage('day3-singapore'); UIkit.offcanvas('#offcanvas').hide();">Tata cara tour</a></li>
                     </ul>
                 </li>
-                <li><a href="#" onclick="showPage('lokasi'); UIkit.offcanvas('#offcanvas').hide();">LOKASI</a></li>
-                <li><a href="https://google.com" target="_blank">DOKUMENTASI</a></li>
-                <li><a href="#" onclick="showPage('wisata'); UIkit.offcanvas('#offcanvas').hide();">INFORMASI WISATA</a></li>
-                <li><a href="#" onclick="showPage('contact'); UIkit.offcanvas('#offcanvas').hide();">CONTACT US</a></li>
-                <li><a href="#" onclick="showPage('absensi'); UIkit.offcanvas('#offcanvas').hide();">ABSENSI</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('lokasi'); UIkit.offcanvas('#offcanvas').hide();">LOKASI</a></li>
+                <li><a href="https://drive.google.com/drive/folders/17TeBO97OlkSm1yZaPMHythqPakF9dDqf" target="_blank">DOKUMENTASI</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('wisata'); UIkit.offcanvas('#offcanvas').hide();">INFORMASI WISATA</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('contact'); UIkit.offcanvas('#offcanvas').hide();">CONTACT US</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('absensi'); UIkit.offcanvas('#offcanvas').hide();">ABSENSI</a></li>
             </ul>
         </div>
     </div>

@@ -3,7 +3,7 @@
     <div class="flight-booking-container">
         <div class="flight-card">
             <!-- Flight Route Header -->
-            <div class="flight-route">
+            <!-- <div class="flight-route">
                 <div class="airport-code">CGK</div>
                 <div class="flight-icon">
                     <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -12,7 +12,7 @@
                     </svg>
                 </div>
                 <div class="airport-code">BTH</div>
-            </div>
+            </div> -->
 
             <!-- Flight Details Form -->
             <div class="flight-details">
@@ -29,34 +29,23 @@
                 <!-- Form Fields -->
                 <div class="form-section">
                     <div class="form-group">
-                        <label>Dari</label>
-                        <input type="text" value="Jakarta" readonly>
+                        <label>Keberangkatan</label>
+                        <input type="text" value="" class="replace-me-value" data-field="additional[4912]" readonly>
                     </div>
                     
                     <div class="form-group">
-                        <label>Ke</label>
-                        <input type="text" value="Batam" readonly>
+                        <label>Kepulangan</label>
+                        <input type="text" value="" class="replace-me-value" data-field="additional[4913]" readonly>
                     </div>
                     
                     <div class="form-row">
                         <div class="form-group">
-                            <label>Keberangkatan</label>
-                            <input type="text" value="11 Juli 2025" readonly>
+                            <label>Tour Leader</label>
+                            <input type="text" value="" class="replace-me-value" data-field="additional[4917]" readonly>
                         </div>
                         <div class="form-group">
-                            <label>Kedatangan</label>
-                            <input type="text" value="11 Juli 2025" readonly>
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Waktu Keberangkatan</label>
-                            <input type="text" value="09:00 WIB" readonly>
-                        </div>
-                        <div class="form-group">
-                            <label>Waktu Kedatangan</label>
-                            <input type="text" value="11:00 WIB" readonly>
+                            <label>Kontak Tour Leader</label>
+                            <input type="text" value="" class="replace-me-value" data-field="additional[4918]" readonly>
                         </div>
                     </div>
                 </div>
@@ -64,7 +53,7 @@
 
             <!-- Contact Person -->
             <div class="contact-person">
-                <h3>Ny. Roos Eliza Putri</h3>
+                <h3 class="replace-me-html" data-field="fullname">Ny. Roos Eliza Putri</h3>
                 <div class="contact-info">
                     <p>1. Peserta diharapkan datang <strong>30 menit sebelum waktu keberangkatan</strong></p>
                     <p>2. Jika membawa bagasi harap di informasikan kepada Tour Leader</p>
