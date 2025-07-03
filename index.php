@@ -74,7 +74,21 @@ if (!in_array($page, $allowed_pages)) {
                     <li><a href="javascript:void(0)" onclick="showPage('lokasi')">LOKASI</a></li>
                     <li><a href="https://drive.google.com/drive/folders/17TeBO97OlkSm1yZaPMHythqPakF9dDqf" target="_blank">DOKUMENTASI</a></li>
                     <li><a href="javascript:void(0)" onclick="showPage('wisata')">INFORMASI WISATA</a></li>
-                    <li><a href="https://wa.me/6281111111?text=contact us" target="_blank">CONTACT US</a></li>
+                    <li>
+                        <a href="javascript:void(0)">CONTACT US</a>
+                        <div class="uk-navbar-dropdown" uk-dropdown>
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="https://wa.me/6282247002050" target="_blank">Ketua Panitia<br><small>Dedy Aristiawan (SDM)</small></a></li>
+                                <li><a href="https://wa.me/6282227522296" target="_blank">Wakil Ketua Panitia<br><small>Roos Eliza Putri (SDM)</small></a></li>
+                                <li><a href="https://wa.me/6281311390074" target="_blank">Transportasi<br><small>Arieko W. (SDM)</small></a></li>
+                                <li><a href="https://wa.me/6285691368284" target="_blank">Perlengkapan<br><small>Ady Sutrisno (SPR)</small></a></li>
+                                <li><a href="https://wa.me/6281298427841" target="_blank">Fun & Team Bonding<br><small>Adnan Bahalwan (PSR)</small></a></li>
+                                <li><a href="https://wa.me/6281315454375" target="_blank">CSR<br><small>Valentina Simon (SPR)</small></a></li>
+                                <li><a href="https://wa.me/6287883987579" target="_blank">Gala Dinner<br><small>Salsabila Putri (SDM)</small></a></li>
+                                <li><a href="https://wa.me/6281287246740" target="_blank">Drama Musical Video<br><small>Carinna Andiva (SDM)</small></a></li>
+                            </ul>
+                        </div>
+                    </li>
                     
                 </ul>
                 
@@ -112,7 +126,19 @@ if (!in_array($page, $allowed_pages)) {
                 <li><a href="javascript:void(0)" onclick="showPage('lokasi'); UIkit.offcanvas('#offcanvas').hide();">LOKASI</a></li>
                 <li><a href="https://drive.google.com/drive/folders/17TeBO97OlkSm1yZaPMHythqPakF9dDqf" target="_blank">DOKUMENTASI</a></li>
                 <li><a href="javascript:void(0)" onclick="showPage('wisata'); UIkit.offcanvas('#offcanvas').hide();">INFORMASI WISATA</a></li>
-                <li><a href="javascript:void(0)" onclick="showPage('contact'); UIkit.offcanvas('#offcanvas').hide();">CONTACT US</a></li>
+                <li class="uk-parent">
+                    <a href="javascript:void(0)">CONTACT US</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="https://wa.me/6282247002050" target="_blank">Ketua Panitia<br><small>Dedy Aristiawan (SDM)</small></a></li>
+                        <li><a href="https://wa.me/6282227522296" target="_blank">Wakil Ketua Panitia<br><small>Roos Eliza Putri (SDM)</small></a></li>
+                        <li><a href="https://wa.me/6281311390074" target="_blank">Transportasi<br><small>Arieko W. (SDM)</small></a></li>
+                        <li><a href="https://wa.me/6285691368284" target="_blank">Perlengkapan<br><small>Ady Sutrisno (SPR)</small></a></li>
+                        <li><a href="https://wa.me/6281298427841" target="_blank">Fun & Team Bonding<br><small>Adnan Bahalwan (PSR)</small></a></li>
+                        <li><a href="https://wa.me/6281315454375" target="_blank">CSR<br><small>Valentina Simon (SPR)</small></a></li>
+                        <li><a href="https://wa.me/6287883987579" target="_blank">Gala Dinner<br><small>Salsabila Putri (SDM)</small></a></li>
+                        <li><a href="https://wa.me/6281287246740" target="_blank">Drama Musical Video<br><small>Carinna Andiva (SDM)</small></a></li>
+                    </ul>
+                </li>
                 <li><a href="javascript:void(0)" onclick="showPage('absensi'); UIkit.offcanvas('#offcanvas').hide();">ABSENSI</a></li>
             </ul>
         </div>
