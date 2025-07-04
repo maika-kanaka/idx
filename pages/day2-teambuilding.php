@@ -15,6 +15,7 @@
                     </div>
                 </div>
             </div>
+            
             <div>
                 <div class="uk-card uk-card-default uk-box-shadow-large" style="border-radius: 20px; overflow: hidden; background: rgba(255, 255, 255, 0.95);">
                     <div class="uk-card-media-top">
@@ -29,14 +30,87 @@
         </div>
     </div>
     
+    <!-- Dress Code Section -->
+    <div class="uk-margin-large-top uk-margin-large-bottom">
+        <h2 class="uk-text-center uk-margin-medium-bottom" style="color: #f7ecb7; font-size: 2rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;">DRESS CODE</h2>
+        
+        <div class="uk-grid-match uk-grid-medium uk-child-width-1-2@m" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-box-shadow-large" style="border-radius: 20px; overflow: hidden; background: rgba(255, 255, 255, 0.95);">
+                    <div class="uk-card-media-top">
+                        <img src="imgs/dresscode/team-building1.png" alt="Gala Dinner Dress Code" style="height: 300px; width: 100%; object-fit: cover;">
+                    </div>
+                    <div class="uk-card-body uk-text-center" style="padding: 25px;">
+                        <h3 style="color: #4a7c59; font-size: 1.3rem; font-weight: 600; margin-bottom: 10px;">Male</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="uk-card uk-card-default uk-box-shadow-large" style="border-radius: 20px; overflow: hidden; background: rgba(255, 255, 255, 0.95);">
+                    <div class="uk-card-media-top">
+                        <img src="imgs/dresscode/team-building2.png" alt="Team Building Dress Code" style="height: 300px; width: 100%; object-fit: cover;">
+                    </div>
+                    <div class="uk-card-body uk-text-center" style="padding: 25px;">
+                        <h3 style="color: #4a7c59; font-size: 1.3rem; font-weight: 600; margin-bottom: 10px;">Female</h3>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <!-- Informasi Pembagian Perlengkapan Section -->
+    <div class="uk-margin-large-top uk-margin-large-bottom">
+        <h2 class="uk-text-center uk-margin-medium-bottom" style="color: #f7ecb7; font-size: 2rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;">INFORMASI PERLENGKAPAN</h2>
+        
+        <div class="uk-flex uk-flex-center">
+            <div class="uk-card uk-card-default uk-box-shadow-xlarge" style="border-radius: 20px; overflow: hidden; background: rgba(255, 255, 255, 0.95); width: 100%; max-width: 900px;">
+                <div class="uk-card-body" style="padding: 40px;">
+                    <div class="uk-grid-divider uk-child-width-1-2@m" uk-grid>
+                        <div>
+                            <h3 style="color: #4a7c59; font-size: 1.5rem; font-weight: 600; margin-bottom: 20px;">📅 Jadwal Pembagian</h3>
+                            <p style="color: #666; font-size: 1rem; line-height: 1.8; margin-bottom: 20px;">
+                                <strong>Tanggal:</strong> 2-3 Juli 2025<br>
+                                <strong>Melalui:</strong> Sekretaris divisi/perwakilan divisi
+                            </p>
+                            <p style="color: #666; font-size: 1rem; line-height: 1.8;">
+                                Masing-masing perwakilan divisi bertugas mendistribusikan perlengkapan ke seluruh karyawan di divisinya.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 style="color: #4a7c59; font-size: 1.5rem; font-weight: 600; margin-bottom: 20px;">👕 Penggunaan Jersey</h3>
+                            <p style="color: #666; font-size: 1rem; line-height: 1.8; margin-bottom: 20px;">
+                                <strong>Seragam / Jersey IDX Team Building 2025</strong> digunakan selama:
+                            </p>
+                            <ul style="color: #666; font-size: 1rem; line-height: 1.8; margin-left: 20px;">
+                                <li>Kegiatan CSR (Bagi Peserta CSR)</li>
+                                <li>Fun & Team Bonding</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="uk-margin-top uk-padding-small" style="background: #f8f9fa; border-radius: 10px; border-left: 4px solid #4a7c59;">
+                        <h4 style="color: #4a7c59; font-size: 1.2rem; font-weight: 600; margin-bottom: 10px;">⚠️ Catatan Khusus</h4>
+                        <p style="color: #666; font-size: 1rem; line-height: 1.6; margin: 0;">
+                            Untuk karyawan KP dan karyawan dengan extra size akan dibagikan pada saat proses check-in hotel.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Kelompok Team Building Section -->
     <div class="uk-margin-large-top uk-margin-large-bottom">        
         <div class="uk-flex uk-flex-center uk-margin-large-top">
             <div class="uk-card uk-card-default uk-box-shadow-xlarge" style="border-radius: 20px; overflow: hidden; background: rgba(255, 255, 255, 0.95); width: 100%; max-width: 800px;">
                 <div class="uk-card-body uk-text-center" style="padding: 60px 40px;">
-                    <h3 style="color: #4a7c59; font-size: 4rem; font-weight: 700; margin-bottom: 40px; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">Kelompok 1</h3>
+                    <h3 style="color: #4a7c59; font-size: 4rem; font-weight: 700; margin-bottom: 40px; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">Download Booklet</h3>
                     
-                    
+                    <a href="https://drive.google.com/drive/folders/1IrqArNDbL3fRusZGmDDvr9l6lzBOXUGu" target="_blank" class="uk-button uk-button-primary uk-button-large" style="font-size: 1.3rem; border-radius: 8px; padding: 18px 48px; font-weight: 600; letter-spacing: 1px;">
+                        <span uk-icon="icon: download" style="margin-right: 10px;"></span>
+                        Download Booklet Team Building
+                    </a>
                 </div>
             </div>
         </div>

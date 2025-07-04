@@ -39,16 +39,6 @@
                             </h4>
                         </div>
 
-                        <div style='border: 2px solid #fff; border: 1px solid #22605b; border-radius: 30px;'>
-                            <div class="uk-margin-small-top uk-margin-small-bottom">
-                                <span class="uk-badge uk-text-small" style="background-color: #fff3cd; color: #000 !important; padding: 4px 12px; border-radius: 12px; font-weight: 500;">Tour Leader</span>
-                            </div>
-                            
-                            <h4 class="uk-margin-small-bottom" style="margin-top: 0px; color: #333; font-weight: 600; font-size: 1.1rem;">
-                                -
-                            </h4>
-                        </div>
-
                         <div style='border: 2px solid #fff; border: 1px solid #22605b; border-radius: 30px; margin-bottom: 15px;'>
                             <div class="uk-margin-small-top uk-margin-small-bottom">
                                 <span class="uk-badge uk-text-small" style="background-color: #f0f0f0; color: #000 !important; padding: 4px 12px; border-radius: 12px; font-weight: 500;">Kloter</span>

@@ -86,6 +86,24 @@ if (!in_array($page, $allowed_pages)) {
                                 <li><a href="https://wa.me/6281315454375" target="_blank">CSR<br><small>Valentina Simon (SPR)</small></a></li>
                                 <li><a href="https://wa.me/6287883987579" target="_blank">Gala Dinner<br><small>Salsabila Putri (SDM)</small></a></li>
                                 <li><a href="https://wa.me/6281287246740" target="_blank">Drama Musical Video<br><small>Carinna Andiva (SDM)</small></a></li>
+                                <li class="uk-parent">
+                                    <a href="javascript:void(0)">Tour Leader Smart Holiday</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="https://wa.me/6281687827" target="_blank">BUDI<br><small>0816-878-271</small></a></li>
+                                        <li><a href="https://wa.me/6285883491252" target="_blank">EMMIL<br><small>0858-8349-1252</small></a></li>
+                                        <li><a href="https://wa.me/628122155255" target="_blank">ESTER<br><small>0812-2155-255</small></a></li>
+                                        <li><a href="https://wa.me/628119782828" target="_blank">ARIEL<br><small>0811-9782-828</small></a></li>
+                                        <li><a href="https://wa.me/628128198200" target="_blank">DONI<br><small>0812-8198-200</small></a></li>
+                                        <li><a href="https://wa.me/6289662110062" target="_blank">MATHIUS<br><small>0896-6211-0062</small></a></li>
+                                        <li><a href="https://wa.me/628164824619" target="_blank">DHANNY<br><small>0816-4824-619</small></a></li>
+                                        <li><a href="https://wa.me/628189191566" target="_blank">RENAULT<br><small>0818-919-156</small></a></li>
+                                        <li><a href="https://wa.me/628131999097" target="_blank">YANSEN<br><small>0813-1999-0979</small></a></li>
+                                        <li><a href="https://wa.me/628188550902" target="_blank">HENDRI<br><small>0818-855-090</small></a></li>
+                                        <li><a href="https://wa.me/628118309788" target="_blank">AON<br><small>0811-8309-788</small></a></li>
+                                        <li><a href="https://wa.me/628193417798" target="_blank">NANCY<br><small>0819-3417-7987</small></a></li>
+                                        <li><a href="https://wa.me/628128193794" target="_blank">YOGI<br><small>0812-8193-794</small></a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                     </li>
@@ -137,9 +155,22 @@ if (!in_array($page, $allowed_pages)) {
                         <li><a href="https://wa.me/6281315454375" target="_blank">CSR<br><small>Valentina Simon (SPR)</small></a></li>
                         <li><a href="https://wa.me/6287883987579" target="_blank">Gala Dinner<br><small>Salsabila Putri (SDM)</small></a></li>
                         <li><a href="https://wa.me/6281287246740" target="_blank">Drama Musical Video<br><small>Carinna Andiva (SDM)</small></a></li>
+                        <li class="uk-nav-header">Tour Leader Smart Holiday</li>
+                        <li><a href="https://wa.me/6281687827" target="_blank">BUDI<br><small>0816-878-271</small></a></li>
+                        <li><a href="https://wa.me/6285883491252" target="_blank">EMMIL<br><small>0858-8349-1252</small></a></li>
+                        <li><a href="https://wa.me/628122155255" target="_blank">ESTER<br><small>0812-2155-255</small></a></li>
+                        <li><a href="https://wa.me/628119782828" target="_blank">ARIEL<br><small>0811-9782-828</small></a></li>
+                        <li><a href="https://wa.me/628128198200" target="_blank">DONI<br><small>0812-8198-200</small></a></li>
+                        <li><a href="https://wa.me/6289662110062" target="_blank">MATHIUS<br><small>0896-6211-0062</small></a></li>
+                        <li><a href="https://wa.me/628164824619" target="_blank">DHANNY<br><small>0816-4824-619</small></a></li>
+                        <li><a href="https://wa.me/628189191566" target="_blank">RENAULT<br><small>0818-919-156</small></a></li>
+                        <li><a href="https://wa.me/628131999097" target="_blank">YANSEN<br><small>0813-1999-0979</small></a></li>
+                        <li><a href="https://wa.me/628188550902" target="_blank">HENDRI<br><small>0818-855-090</small></a></li>
+                        <li><a href="https://wa.me/628118309788" target="_blank">AON<br><small>0811-8309-788</small></a></li>
+                        <li><a href="https://wa.me/628193417798" target="_blank">NANCY<br><small>0819-3417-7987</small></a></li>
+                        <li><a href="https://wa.me/628128193794" target="_blank">YOGI<br><small>0812-8193-794</small></a></li>
                     </ul>
                 </li>
-                <li><a href="javascript:void(0)" onclick="showPage('absensi'); UIkit.offcanvas('#offcanvas').hide();">ABSENSI</a></li>
             </ul>
         </div>
     </div>
