@@ -4,6 +4,8 @@
         <div class="uk-grid-match uk-grid-large" uk-grid>
             <div class="uk-width-2-3@m">
                 <div class="csr-content" uk-scrollspy="cls: uk-animation-slide-left; delay: 300">
+
+                    <?php include 'components/logo.php'; ?>
                     <h1 class="uk-heading-medium uk-text-warning uk-text-bold uk-margin-bottom" style="font-size: 3rem; letter-spacing: 2px;">CSR</h1>
                     <h2 class="uk-text-white uk-margin-small-bottom" style="font-size: 1.8rem; font-weight: 600;">Vertical Culture Plus</h2>
                     <p class="uk-text-white uk-text-italic uk-margin-medium-bottom" style="font-size: 1.1rem; opacity: 0.9;">Organic Waste Management Based on Vegetable Plantations</p>
@@ -272,6 +274,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+
+<?php include 'components/logo-bottom.php'; ?>
 
 <style>
 /* Global Styles */

@@ -3,7 +3,21 @@
     <h1 class="uk-heading-large uk-text-center qr-title">QR Code</h1>
     <div class="uk-text-center uk-margin-large-top">
         <div style="max-width: 80vw;" class="uk-card uk-card-default uk-card-body uk-width-1-3@m uk-margin-auto qr-card" style="border-radius: 40px;">
-            <img src="https://portal.migunesia.com/img/vsimpleqrcode/sm69584f73ac63e12.png" alt="QR Code" class="qr-image" style="max-width: 280px;">
+            <img src="https://portal.migunesia.com/img/vsimpleqrcode/sm69584f73ac63e12.png" alt="QR Code" class="qr-image" id="qrcode-personal">
         </div>
     </div>
+
+    <?php include 'components/logo-bottom.php'; ?>
 </div> 
+
+<style>
+    #qrcode-personal {
+        max-width: 320px;
+    }
+
+    @media (max-width: 768px) {
+        #qrcode-personal {
+            max-width: 260px;
+        }
+    }
+</style>

@@ -1,5 +1,6 @@
 <div class="transportasi-page">
     <!-- Flight Booking Card -->
+    <?php include 'components/logo.php'; ?>
     <div class="flight-booking-container">
         <div class="flight-card">
             <!-- Flight Route Header -->
@@ -65,4 +66,6 @@
 
     <!-- City Skyline Background -->
     <div class="city-skyline"></div>
+
+    <?php include 'components/logo-bottom.php'; ?>
 </div> 
