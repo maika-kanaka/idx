@@ -309,7 +309,7 @@ if (!in_array($page, $allowed_pages)) {
     
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="js/migunesia.js"></script>
+    <script src="js/migunesia.js?v=0.0.2"></script>
     
     <!-- Custom JavaScript -->
     <script>

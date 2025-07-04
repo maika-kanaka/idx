@@ -52,19 +52,19 @@
 
                     <div class="form-group">
                         <label>Kloter Keberangkatan</label>
-                        <input type="text" value="" class="replace-me-value" data-field="additional[]" readonly>
+                        <input type="text" value="" class="replace-me-value" data-field="additional[4872]" readonly>
                     </div>
 
                     <div class="form-group">
                         <label>Kloter Kepulangan</label>
-                        <input type="text" value="" class="replace-me-value" data-field="additional[]" readonly>
+                        <input type="text" value="" class="replace-me-value" data-field="additional[5020]" readonly>
                     </div>
                 </div>
             </div>
 
             <!-- Contact Person -->
             <div class="contact-person">
-                <h3 class="replace-me-html" data-field="fullname">Ny. Roos Eliza Putri</h3>
+                <h3 class="replace-me-html" data-field="fullname">-</h3>
                 <div class="contact-info">
                     <p>1. Peserta diharapkan datang <strong>30 menit sebelum waktu keberangkatan</strong></p>
                     <p>2. Jika membawa bagasi harap di informasikan kepada Tour Leader</p>
