@@ -1,10 +1,18 @@
+<style>
+    @media (max-width: 768px) {
+        #uk-grid-akomodasi {
+            margin-left: -30px !important;
+        }
+    }
+</style>
+
 <div class="uk-container">
     <?php include 'components/logo.php'; ?>
     
     <h1 class="uk-heading-large uk-text-center uk-margin-large-bottom">Akomodasi</h1>
     
     <div class="uk-flex uk-flex-center">
-        <div class="uk-grid-match uk-grid-medium" uk-grid style="width:100%; max-width: 500px; margin-left: 15px; margin-bottom: 100px;">
+        <div class="uk-grid-match uk-grid-medium" id="uk-grid-akomodasi" uk-grid style="width:100%; max-width: 500px; margin-left: 15px; margin-bottom: 100px;">
 
             <!-- START: Hotel Batam -->
             <div>
