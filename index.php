@@ -24,7 +24,7 @@ if (!in_array($page, $allowed_pages)) {
     
     <!-- UIKit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css" />
-    <link rel="stylesheet" href="css/style.css?v=0.0.6">
+    <link rel="stylesheet" href="css/style.css?v=0.0.7">
     <link rel="stylesheet" href="css/rundown.css">
 </head>
 <body>
@@ -68,6 +68,8 @@ if (!in_array($page, $allowed_pages)) {
                                         <li><a href="javascript:void(0)" onclick="showPage('day3-singapore')">Tata cara tour</a></li>
                                     </ul>
                                 </li>
+
+                                <li><a href="https://drive.google.com/drive/folders/1IrqArNDbL3fRusZGmDDvr9l6lzBOXUGu" target="_blank">Booklet Team Building</a></li>
                             </ul>
                         </div>
                     </li>
@@ -139,6 +141,8 @@ if (!in_array($page, $allowed_pages)) {
                         <li><a href="javascript:void(0)" onclick="showPage('day2-galadinner'); UIkit.offcanvas('#offcanvas').hide();">Gala Dinner</a></li>
                         <li class="uk-nav-header">Day 3</li>
                         <li><a href="javascript:void(0)" onclick="showPage('day3-singapore'); UIkit.offcanvas('#offcanvas').hide();">Tata cara tour</a></li>
+
+                        <li><a href="https://drive.google.com/drive/folders/1IrqArNDbL3fRusZGmDDvr9l6lzBOXUGu" target="_blank">Booklet Team Building</a></li>
                     </ul>
                 </li>
                 <li><a href="javascript:void(0)" onclick="showPage('lokasi'); UIkit.offcanvas('#offcanvas').hide();">LOKASI</a></li>
@@ -305,6 +309,7 @@ if (!in_array($page, $allowed_pages)) {
     
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/migunesia.js"></script>
     
     <!-- Custom JavaScript -->
     <script>

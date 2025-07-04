@@ -100,7 +100,7 @@
         </div>
     </div>
 
-    <!-- Kelompok Team Building Section -->
+    <!-- Kelompok Team Building Section
     <div class="uk-margin-large-top uk-margin-large-bottom">        
         <div class="uk-flex uk-flex-center uk-margin-large-top">
             <div class="uk-card uk-card-default uk-box-shadow-xlarge" style="border-radius: 20px; overflow: hidden; background: rgba(255, 255, 255, 0.95); width: 100%; max-width: 800px;">
@@ -114,7 +114,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     
     <?php include 'components/logo-bottom.php'; ?>
 </div>
