@@ -51,7 +51,12 @@
                     </div>
 
                     <div class="form-group">
-                        <label>Kloter</label>
+                        <label>Kloter Keberangkatan</label>
+                        <input type="text" value="" class="replace-me-value" data-field="additional[]" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Kloter Kepulangan</label>
                         <input type="text" value="" class="replace-me-value" data-field="additional[]" readonly>
                     </div>
                 </div>
