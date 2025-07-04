@@ -91,7 +91,7 @@ if (!in_array($page, $allowed_pages)) {
                                 <li class="uk-parent">
                                     <a href="javascript:void(0)">Tour Leader Smart Holiday</a>
                                     <ul class="uk-nav-sub">
-                                        <li><a href="https://wa.me/6281687827" target="_blank">BUDI<br><small>0816-878-271</small></a></li>
+                                        <li><a href="https://wa.me/62816878271" target="_blank">BUDI<br><small>0816-878-271</small></a></li>
                                         <li><a href="https://wa.me/6285883491252" target="_blank">EMMIL<br><small>0858-8349-1252</small></a></li>
                                         <li><a href="https://wa.me/628122155255" target="_blank">ESTER<br><small>0812-2155-255</small></a></li>
                                         <li><a href="https://wa.me/628119782828" target="_blank">ARIEL<br><small>0811-9782-828</small></a></li>
@@ -160,7 +160,7 @@ if (!in_array($page, $allowed_pages)) {
                         <li><a href="https://wa.me/6287883987579" target="_blank">Gala Dinner<br><small>Salsabila Putri (SDM)</small></a></li>
                         <li><a href="https://wa.me/6281287246740" target="_blank">Drama Musical Video<br><small>Carinna Andiva (SDM)</small></a></li>
                         <li class="uk-nav-header">Tour Leader Smart Holiday</li>
-                        <li><a href="https://wa.me/6281687827" target="_blank">BUDI<br><small>0816-878-271</small></a></li>
+                        <li><a href="https://wa.me/62816878271" target="_blank">BUDI<br><small>0816-878-271</small></a></li>
                         <li><a href="https://wa.me/6285883491252" target="_blank">EMMIL<br><small>0858-8349-1252</small></a></li>
                         <li><a href="https://wa.me/628122155255" target="_blank">ESTER<br><small>0812-2155-255</small></a></li>
                         <li><a href="https://wa.me/628119782828" target="_blank">ARIEL<br><small>0811-9782-828</small></a></li>
