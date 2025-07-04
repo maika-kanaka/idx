@@ -41,13 +41,18 @@
                     
                     <div class="form-row">
                         <div class="form-group">
-                            <label>Tour Leader</label>
+                            <label>Tour Leader (Berangkat)</label>
                             <input type="text" value="" class="replace-me-value" data-field="additional[4917]" readonly>
                         </div>
                         <div class="form-group">
-                            <label>Kontak Tour Leader</label>
+                            <label>Tour Leader (Kembali)</label>
                             <input type="text" value="" class="replace-me-value" data-field="additional[4918]" readonly>
                         </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Kloter</label>
+                        <input type="text" value="" class="replace-me-value" data-field="additional[]" readonly>
                     </div>
                 </div>
             </div>
