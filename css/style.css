@@ -44,8 +44,12 @@
 }
 
 @media (max-width: 768px) {
+    #component-top-logo img {
+        width: auto;
+    }
+
     .logo {
-        max-height: 40px;
+        max-height: 50px;
     }
     
     .hero-section {

@@ -24,7 +24,7 @@ if (!in_array($page, $allowed_pages)) {
     
     <!-- UIKit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=0.0.6">
     <link rel="stylesheet" href="css/rundown.css">
 </head>
 <body>
